@@ -1,4 +1,4 @@
 # GitHubAction
 
-test
+test test
 
