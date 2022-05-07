@@ -28,7 +28,7 @@ Enter same passphrase again:
 2. 将公钥`myblog.pub`的内容复制到~/.ssh/authorized_keys，或者直接
 
 ```shell
-$ cat mysite.pub >> authorized_keys
+$ cat myblog.pub >> authorized_keys
 ```
 
 3. 复制私钥内容备用；
