@@ -4,9 +4,17 @@
         <link>https://howe0116.com/</link>
         <description>Howe&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>howe0116@gmail.com (Howe)</managingEditor>
-            <webMaster>howe0116@gmail.com (Howe)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Apr 2022 18:03:58 &#43;0800</lastBuildDate>
+            <webMaster>howe0116@gmail.com (Howe)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 07 May 2022 13:25:43 &#43;0800</lastBuildDate>
             <atom:link href="https://howe0116.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>GitHubAction</title>
+    <link>https://howe0116.com/githubaction/</link>
+    <pubDate>Sat, 07 May 2022 13:25:43 &#43;0800</pubDate>
+    <author>Howe</author>
+    <guid>https://howe0116.com/githubaction/</guid>
+    <description><![CDATA[test]]></description>
+</item>
+<item>
     <title>RSShub搭配Miniflux</title>
     <link>https://howe0116.com/rsshub%E6%90%AD%E9%85%8Dminiflux/</link>
     <pubDate>Fri, 29 Apr 2022 18:03:58 &#43;0800</pubDate>
