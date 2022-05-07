@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>RSS - 标签 - Howe&#39;s Blog</title>
+        <link>https://howe0116.com/tags/rss/</link>
+        <description>RSS - 标签 - Howe&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>howe0116@gmail.com (Howe)</managingEditor>
+            <webMaster>howe0116@gmail.com (Howe)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Apr 2022 18:03:58 &#43;0800</lastBuildDate><atom:link href="https://howe0116.com/tags/rss/" rel="self" type="application/rss+xml" /><item>
+    <title>RSShub搭配Miniflux</title>
+    <link>https://howe0116.com/rsshub%E6%90%AD%E9%85%8Dminiflux/</link>
+    <pubDate>Fri, 29 Apr 2022 18:03:58 &#43;0800</pubDate>
+    <author>Howe</author>
+    <guid>https://howe0116.com/rsshub%E6%90%AD%E9%85%8Dminiflux/</guid>
+    <description><![CDATA[😏简单记录一下步骤，在Centos8.2使用Docker&amp;docker-compose RSS Really Simple Syndication（简易信息聚合），]]></description>
+</item>
+</channel>
+</rss>
