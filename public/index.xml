@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Howe&#39;s Blog</title>
-    <link>/</link>
+    <link>https://howe0116.com/</link>
     <description>Recent content on Howe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Howe</copyright>
-    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="https://howe0116.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 GitHub Action 推送博客到服务器</title>
-      <link>/post/blog/githubaction/</link>
+      <link>https://howe0116.com/post/blog/githubaction/</link>
       <pubDate>Sat, 07 May 2022 13:25:43 +0800</pubDate>
       
-      <guid>/post/blog/githubaction/</guid>
+      <guid>https://howe0116.com/post/blog/githubaction/</guid>
       <description>&lt;p&gt;为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务器上，以下是我的步骤:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;准备ssh密钥对，以验证登录服务器;&lt;/li&gt;
@@ -139,10 +139,10 @@ Enter same passphrase again:
     
     <item>
       <title>关于</title>
-      <link>/about/</link>
+      <link>https://howe0116.com/about/</link>
       <pubDate>Fri, 06 May 2022 17:35:14 +0800</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://howe0116.com/about/</guid>
       <description>&lt;h2 id=&#34;hi-there&#34;&gt;Hi there,😊&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I’m howe&lt;/em&gt;, &lt;del&gt;我先想想怎么编辑这个页面&lt;/del&gt;
 算了，没什么好写的，先这样吧。&lt;/p&gt;
@@ -164,10 +164,10 @@ Enter same passphrase again:
     
     <item>
       <title>RSShub搭配Miniflux</title>
-      <link>/post/blog/rsshub%E6%90%AD%E9%85%8Dminiflux/</link>
+      <link>https://howe0116.com/post/blog/rsshubandminiflux/</link>
       <pubDate>Fri, 29 Apr 2022 18:03:58 +0800</pubDate>
       
-      <guid>/post/blog/rsshub%E6%90%AD%E9%85%8Dminiflux/</guid>
+      <guid>https://howe0116.com/post/blog/rsshubandminiflux/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;😏简单记录一下步骤，在Centos8.2使用Docker&amp;amp;docker-compose&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -379,10 +379,10 @@ sh vhost.sh
     
     <item>
       <title>为什么要喝酒呢？</title>
-      <link>/post/life/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%96%9D%E9%85%92%E5%91%A2/</link>
+      <link>https://howe0116.com/post/life/whydrinks/</link>
       <pubDate>Sun, 17 Apr 2022 01:44:12 +0000</pubDate>
       
-      <guid>/post/life/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%96%9D%E9%85%92%E5%91%A2/</guid>
+      <guid>https://howe0116.com/post/life/whydrinks/</guid>
       <description>&lt;p&gt;今日两件事，都与酒有关。
 一是扶起倒栽在石头上的醉汉，
 一是与许久未见的旧友“畅饮&amp;quot;，只过三杯便开始说胡话。
@@ -399,10 +399,10 @@ sh vhost.sh
     
     <item>
       <title>重装系统</title>
-      <link>/post/blog/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://howe0116.com/post/blog/win11install/</link>
       <pubDate>Wed, 13 Apr 2022 15:29:25 +0000</pubDate>
       
-      <guid>/post/blog/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://howe0116.com/post/blog/win11install/</guid>
       <description>&lt;h2 id=&#34;前情提要&#34;&gt;前情提要&lt;/h2&gt;
 &lt;p&gt;    笔记本自带的机械硬盘用着实在不得劲，也想着将升级到Win11；遂进行了一次电脑更换硬盘和重装系统；&lt;/p&gt;
 &lt;p&gt;    经过选择困难，深思熟虑后，在狗东购入了英睿达mx500 500G的固态硬盘，随便选了个移动硬盘盒(联想的)用来将换下的机械硬盘改成移动硬盘，闪迪的C274 U盘用来装pe(囧~买大了,64G感觉没啥用)；&lt;/p&gt;
@@ -454,10 +454,10 @@ sh vhost.sh
     
     <item>
       <title>家有喜事</title>
-      <link>/post/life/%E5%AE%B6%E6%9C%89%E5%96%9C%E4%BA%8B/</link>
+      <link>https://howe0116.com/post/life/wedding/</link>
       <pubDate>Thu, 13 Jan 2022 21:40:49 +0000</pubDate>
       
-      <guid>/post/life/%E5%AE%B6%E6%9C%89%E5%96%9C%E4%BA%8B/</guid>
+      <guid>https://howe0116.com/post/life/wedding/</guid>
       <description>&lt;h2 id=&#34;订婚宴&#34;&gt;订婚宴&lt;/h2&gt;
 &lt;p&gt;时间进入2022年的元旦，妹妹在家乡举行了订婚宴。时值元旦，亲朋好友来了许多，年龄到了，是该进入人生的下一个阶段。
 心里也不知道是什么感受，有替她找到了属于她的那份幸福而开心，也有来自身份转换后的些许不舍吧。&lt;/p&gt;
@@ -473,10 +473,10 @@ sh vhost.sh
     
     <item>
       <title>冬日杂事</title>
-      <link>/post/life/%E5%86%AC%E6%97%A5%E6%9D%82%E4%BA%8B/</link>
+      <link>https://howe0116.com/post/life/winterdiary/</link>
       <pubDate>Sat, 18 Dec 2021 15:29:36 +0000</pubDate>
       
-      <guid>/post/life/%E5%86%AC%E6%97%A5%E6%9D%82%E4%BA%8B/</guid>
+      <guid>https://howe0116.com/post/life/winterdiary/</guid>
       <description>&lt;h2 id=&#34;冬至&#34;&gt;冬至&lt;/h2&gt;
 &lt;p&gt;之前老是说广东没冬天，只有出去的时候才穿一件薄外套；
 中午的阳光更是暖和，所以羽绒服现在都还没派上用场；
@@ -495,10 +495,10 @@ sh vhost.sh
     
     <item>
       <title>买房问题</title>
-      <link>/post/life/%E4%B9%B0%E6%88%BF%E9%97%AE%E9%A2%98/</link>
+      <link>https://howe0116.com/post/life/aboutbuyahouse/</link>
       <pubDate>Sun, 05 Dec 2021 22:36:43 +0000</pubDate>
       
-      <guid>/post/life/%E4%B9%B0%E6%88%BF%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://howe0116.com/post/life/aboutbuyahouse/</guid>
       <description>&lt;p&gt;最近天气一直都很好，阳光洒在身上痒痒的，冬天，讨厌的荨麻疹又出来了。&lt;/p&gt;
 &lt;p&gt;妹妹上年订的房可以验收房了，陪着去县城逛了一下；站在29楼的阳台上，有些许感概，房子问题大概是每个人必经的吧~&lt;/p&gt;
 &lt;p&gt;居住在高楼之上，社交真的全无，门一关，外面发生啥事都不知道；不像在乡村，哪家发生点喜事丧事，都可以口耳相传人人皆知；但是县城的交通真的让人一言难尽，城区的房子又贵得一批；&lt;/p&gt;
@@ -510,10 +510,10 @@ sh vhost.sh
     
     <item>
       <title>开站大吉</title>
-      <link>/post/life/%E5%8D%81%E4%BA%8C%E6%9C%88%E5%BC%80%E7%AB%99%E5%A4%A7%E5%90%89/</link>
+      <link>https://howe0116.com/post/life/firstcontent/</link>
       <pubDate>Tue, 30 Nov 2021 01:44:12 +0000</pubDate>
       
-      <guid>/post/life/%E5%8D%81%E4%BA%8C%E6%9C%88%E5%BC%80%E7%AB%99%E5%A4%A7%E5%90%89/</guid>
+      <guid>https://howe0116.com/post/life/firstcontent/</guid>
       <description>&lt;p&gt;起风了，天气越来越冷了，2021年也来到了十二月了，时间不会为任何人驻足。&lt;/p&gt;
 &lt;p&gt;说起写个人博客的原因，大概是想充实自己，也想记录一下一些东西；不过之前在备案的感觉真的麻烦，一度想放弃，不过在一步一步完成的时候总归是有点成就感的，总算是开始了；
 既然开始了就要坚持下去，从对自己的希冀到与他人的分享，从无从下手到养成习惯；

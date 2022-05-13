@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Howe&#39;s Blog</title>
-    <link>/categories/</link>
+    <link>https://howe0116.com/categories/</link>
     <description>Recent content in Categories on Howe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Howe</copyright>
-    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="https://howe0116.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>/categories/blog/</link>
+      <link>https://howe0116.com/categories/blog/</link>
       <pubDate>Sat, 07 May 2022 13:25:43 +0800</pubDate>
       
-      <guid>/categories/blog/</guid>
+      <guid>https://howe0116.com/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
-      <link>/categories/life/</link>
+      <link>https://howe0116.com/categories/life/</link>
       <pubDate>Sun, 17 Apr 2022 01:44:12 +0000</pubDate>
       
-      <guid>/categories/life/</guid>
+      <guid>https://howe0116.com/categories/life/</guid>
       <description></description>
     </item>
     

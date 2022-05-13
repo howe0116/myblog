@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Howe&#39;s Blog</title>
-    <link>/tags/</link>
+    <link>https://howe0116.com/tags/</link>
     <description>Recent content in Tags on Howe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Howe</copyright>
-    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="https://howe0116.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>/tags/blog/</link>
+      <link>https://howe0116.com/tags/blog/</link>
       <pubDate>Sat, 07 May 2022 13:25:43 +0800</pubDate>
       
-      <guid>/tags/blog/</guid>
+      <guid>https://howe0116.com/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub Action</title>
-      <link>/tags/github-action/</link>
+      <link>https://howe0116.com/tags/github-action/</link>
       <pubDate>Sat, 07 May 2022 13:25:43 +0800</pubDate>
       
-      <guid>/tags/github-action/</guid>
+      <guid>https://howe0116.com/tags/github-action/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://howe0116.com/tags/hugo/</link>
       <pubDate>Sat, 07 May 2022 13:25:43 +0800</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://howe0116.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RSS</title>
-      <link>/tags/rss/</link>
+      <link>https://howe0116.com/tags/rss/</link>
       <pubDate>Fri, 29 Apr 2022 18:03:58 +0800</pubDate>
       
-      <guid>/tags/rss/</guid>
+      <guid>https://howe0116.com/tags/rss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>win11</title>
-      <link>/tags/win11/</link>
+      <link>https://howe0116.com/tags/win11/</link>
       <pubDate>Wed, 13 Apr 2022 15:29:25 +0000</pubDate>
       
-      <guid>/tags/win11/</guid>
+      <guid>https://howe0116.com/tags/win11/</guid>
       <description></description>
     </item>
     

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>win11 on Howe&#39;s Blog</title>
-    <link>/tags/win11/</link>
+    <link>https://howe0116.com/tags/win11/</link>
     <description>Recent content in win11 on Howe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Howe</copyright>
-    <lastBuildDate>Wed, 13 Apr 2022 15:29:25 +0000</lastBuildDate><atom:link href="/tags/win11/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 15:29:25 +0000</lastBuildDate><atom:link href="https://howe0116.com/tags/win11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重装系统</title>
-      <link>/post/blog/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://howe0116.com/post/blog/win11install/</link>
       <pubDate>Wed, 13 Apr 2022 15:29:25 +0000</pubDate>
       
-      <guid>/post/blog/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://howe0116.com/post/blog/win11install/</guid>
       <description>前情提要 笔记本自带的机械硬盘用着实在不得劲，也想着将升级到Win11；遂进行了一次电脑更换硬盘和重装系统； 经过选择困难，深思熟虑后，在狗东购</description>
     </item>
     

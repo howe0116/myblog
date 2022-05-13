@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Howe&#39;s Blog</title>
-    <link>/tags/blog/</link>
+    <link>https://howe0116.com/tags/blog/</link>
     <description>Recent content in Blog on Howe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Howe</copyright>
-    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 May 2022 13:25:43 +0800</lastBuildDate><atom:link href="https://howe0116.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 GitHub Action 推送博客到服务器</title>
-      <link>/post/blog/githubaction/</link>
+      <link>https://howe0116.com/post/blog/githubaction/</link>
       <pubDate>Sat, 07 May 2022 13:25:43 +0800</pubDate>
       
-      <guid>/post/blog/githubaction/</guid>
+      <guid>https://howe0116.com/post/blog/githubaction/</guid>
       <description>为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务</description>
     </item>
     
     <item>
       <title>RSShub搭配Miniflux</title>
-      <link>/post/blog/rsshub%E6%90%AD%E9%85%8Dminiflux/</link>
+      <link>https://howe0116.com/post/blog/rsshubandminiflux/</link>
       <pubDate>Fri, 29 Apr 2022 18:03:58 +0800</pubDate>
       
-      <guid>/post/blog/rsshub%E6%90%AD%E9%85%8Dminiflux/</guid>
+      <guid>https://howe0116.com/post/blog/rsshubandminiflux/</guid>
       <description>😏简单记录一下步骤，在Centos8.2使用Docker&amp;amp;docker-compose RSS Really Simple Syndication（简易信息聚合），</description>
     </item>
     
     <item>
       <title>为什么要喝酒呢？</title>
-      <link>/post/life/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%96%9D%E9%85%92%E5%91%A2/</link>
+      <link>https://howe0116.com/post/life/whydrinks/</link>
       <pubDate>Sun, 17 Apr 2022 01:44:12 +0000</pubDate>
       
-      <guid>/post/life/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%96%9D%E9%85%92%E5%91%A2/</guid>
+      <guid>https://howe0116.com/post/life/whydrinks/</guid>
       <description>今日两件事，都与酒有关。 一是扶起倒栽在石头上的醉汉， 一是与许久未见的旧友“畅饮&amp;quot;，只过三杯便开始说胡话。 于我而言，酒的味道不讨我欢</description>
     </item>
     
     <item>
       <title>重装系统</title>
-      <link>/post/blog/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://howe0116.com/post/blog/win11install/</link>
       <pubDate>Wed, 13 Apr 2022 15:29:25 +0000</pubDate>
       
-      <guid>/post/blog/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://howe0116.com/post/blog/win11install/</guid>
       <description>前情提要 笔记本自带的机械硬盘用着实在不得劲，也想着将升级到Win11；遂进行了一次电脑更换硬盘和重装系统； 经过选择困难，深思熟虑后，在狗东购</description>
     </item>
     
     <item>
       <title>开站大吉</title>
-      <link>/post/life/%E5%8D%81%E4%BA%8C%E6%9C%88%E5%BC%80%E7%AB%99%E5%A4%A7%E5%90%89/</link>
+      <link>https://howe0116.com/post/life/firstcontent/</link>
       <pubDate>Tue, 30 Nov 2021 01:44:12 +0000</pubDate>
       
-      <guid>/post/life/%E5%8D%81%E4%BA%8C%E6%9C%88%E5%BC%80%E7%AB%99%E5%A4%A7%E5%90%89/</guid>
+      <guid>https://howe0116.com/post/life/firstcontent/</guid>
       <description>起风了，天气越来越冷了，2021年也来到了十二月了，时间不会为任何人驻足。 说起写个人博客的原因，大概是想充实自己，也想记录一下一些东西；不过</description>
     </item>
     
