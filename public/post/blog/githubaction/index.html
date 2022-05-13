@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>使用 GitHub Action 推送博客到服务器 - Howe&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Howe" /><meta name="description" content="为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务" /><meta name="keywords" content="Howe, howe0116" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.89.0 with theme even" />
+
+
+<link rel="canonical" href="/post/blog/githubaction/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.c7062644438ff238be08729e6d0d5ccf315ec600118236448e7ba11996545cb6.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="使用 GitHub Action 推送博客到服务器" />
+<meta property="og:description" content="为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/blog/githubaction/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-05-07T13:25:43+08:00" />
+<meta property="article:modified_time" content="2022-05-07T13:25:43+08:00" />
+
+<meta itemprop="name" content="使用 GitHub Action 推送博客到服务器">
+<meta itemprop="description" content="为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务"><meta itemprop="datePublished" content="2022-05-07T13:25:43+08:00" />
+<meta itemprop="dateModified" content="2022-05-07T13:25:43+08:00" />
+<meta itemprop="wordCount" content="1060">
+<meta itemprop="keywords" content="Blog,GitHub Action,hugo," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 GitHub Action 推送博客到服务器"/>
+<meta name="twitter:description" content="为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Howe</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Howe</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用 GitHub Action 推送博客到服务器</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-05-07 </span>
+        <div class="post-category">
+            <a href="/categories/blog/"> Blog </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#稍微了解一下githubaction">稍微了解一下GitHubAction</a></li>
+        <li><a href="#生成ssh密钥对">生成SSH密钥对</a></li>
+        <li><a href="#创建actions">创建Actions</a>
+          <ul>
+            <li><a href="#添加secret">添加secret</a></li>
+            <li><a href="#配置文件">配置文件</a></li>
+            <li><a href="#推送">推送</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>为了省去每次更新网站都要将hugo生成的public静态网页文件夹用XFTP传输到服务器这步骤，使用了Github Action自动推送到服务器上，以下是我的步骤:</p>
+<ol>
+<li>准备ssh密钥对，以验证登录服务器;</li>
+<li>新建一个github仓库,用来推Hugo生成的 public 文件夹;</li>
+<li>创建GitHubAction服务;</li>
+</ol>
+<h2 id="稍微了解一下githubaction">稍微了解一下GitHubAction</h2>
+<p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html">GitHub Actions入门教程</a></p>
+<h2 id="生成ssh密钥对">生成SSH密钥对</h2>
+<p>想把文件部署到远程服务器，先要解决登录问题。可以用密码登录也可以用SSH密钥，我用的是SSH密钥;</p>
+<ol>
+<li>生成 SSH 密钥对：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ mkdir -p ~/.ssh <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/.ssh 
+$ ssh-keygen -t rsa -f myblog 
+Generating public/private rsa key pair. Enter passphrase <span class="o">(</span>empty <span class="k">for</span> no passphrase<span class="o">)</span>: 
+Enter same passphrase again:
+</code></pre></td></tr></table>
+</div>
+</div><p>一直enter就行，会在~/.ssh生成<code>myblog</code>（私钥）和<code>myblog.pub</code>（公钥），私钥注意要保管好；</p>
+<ol start="2">
+<li>将公钥<code>myblog.pub</code>的内容复制到~/.ssh/authorized_keys，或者直接</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ cat myblog.pub &gt;&gt; authorized_keys
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>复制私钥内容备用；</li>
+</ol>
+<h2 id="创建actions">创建Actions</h2>
+<p>登录GitHub创建一个仓库，推送public到仓库，并创建actions</p>
+<p><img src="https://pic.howe0116.com/img/image-20220507151542414.png" alt="image-20220507151542414"></p>
+<h3 id="添加secret">添加secret</h3>
+<p>打开代码仓库-&gt; <code>Settings</code>-&gt; <code>Secrets(Actions)</code>-&gt; <code>New repository secret</code> 添加以下</p>
+<p><img src="https://pic.howe0116.com/img/image-20220507153040032.png" alt="image-20220507153040032"></p>
+<h3 id="配置文件">配置文件</h3>
+<p>copy自某位网友，来源找不着了 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy site files</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">main</span><span class="w"> </span><span class="c"># 只在main上push触发部署</span><span class="w">
+</span><span class="w">    </span><span class="nt">paths-ignore</span><span class="p">:</span><span class="w"> 
+</span><span class="w">      </span>- <span class="l">README.md</span><span class="w">
+</span><span class="w">      </span>- <span class="l">LICENSE</span><span class="w">
+</span><span class="w">      </span>- <span class="l">.gitignore</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w"> </span><span class="c"># 使用ubuntu系统镜像运行自动化脚本</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"> </span><span class="c"># 自动化步骤</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w"> </span><span class="c"># 1.下载代码仓库</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Server</span><span class="w"> </span><span class="c"># 2.rsync推文件</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">AEnterprise/rsync-deploy@v1.0</span><span class="w"> </span><span class="c"># 使用别人包装好的步骤镜像</span><span class="w">
+</span><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">DEPLOY_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.DEPLOY_KEY }}</span><span class="w"> </span><span class="c"># 引用配置，SSH私钥</span><span class="w">
+</span><span class="w">          </span><span class="nt">ARGS</span><span class="p">:</span><span class="w"> </span>-<span class="l">avz --delete public/</span><span class="w"> </span><span class="c"># rsync参数，</span><span class="w">
+</span><span class="w">          </span><span class="nt">SERVER_PORT</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;22&#39;</span><span class="w"> </span><span class="c"># SSH端口</span><span class="w">
+</span><span class="w">          </span><span class="nt">FOLDER</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w"> </span><span class="c"># 要推送的文件夹，路径相对于代码仓库的根目录</span><span class="w">
+</span><span class="w">          </span><span class="nt">SERVER_IP</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.SSH_HOST }}</span><span class="w"> </span><span class="c"># 引用配置，服务器的host名（IP）</span><span class="w">
+</span><span class="w">          </span><span class="nt">USERNAME</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.SSH_USERNAME }}</span><span class="w"> </span><span class="c"># 引用配置，服务器登录名</span><span class="w">
+</span><span class="w">          </span><span class="nt">SERVER_DESTINATION</span><span class="p">:</span><span class="w"> </span><span class="l">/home/public</span><span class="w"> </span><span class="c"># 部署到目标文件夹</span><span class="w">
+</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="推送">推送</h3>
+<p>这样，每次生成public文件夹推送到GitHub，就可以自动上传到服务器了；</p>
+<p><img src="https://pic.howe0116.com/img/image-20220507153557964.png" alt="image-20220507153557964"></p>
+<p>补充：因为只需要public文件夹push到 GitHub，忽略掉其他hugo源文件，创建<code>.gitignore</code>并 填入除了public之外的文件夹名称即可。</p>
+<p>然后发表文章或者修改网站时，hugo命令生成public静态网页，打开GitHub desktop进行push。</p>
+<p>就是每push一次，腾讯云就发一次高危警告，麻了。🤣</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Howe</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-05-07
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/blog/">Blog</a>
+          <a href="/tags/github-action/">GitHub Action</a>
+          <a href="/tags/hugo/">hugo</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/blog/rsshub%E6%90%AD%E9%85%8Dminiflux/">
+            <span class="next-text nav-default">RSShub搭配Miniflux</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'howe0116';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="howe0116/myblog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:howe0116@gmail.com" class="iconfont icon-email" title="email"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Howe</span>
+  </span>
+  <span>本站由&nbsp;<a class="test" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" style="display:inline-block;text-decoration:none;height:20px;color:#939393;"><img src="https://pic.howe0116.com/img/upyun_logo.svg" width=52px style="float:left;margin: 4px 0px 0px 0px;">&nbsp;</a>提供加速服务</span>
+  <span> | 粤ICP备<a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">2021157990</a>号</span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
