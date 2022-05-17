@@ -143,22 +143,49 @@ Enter same passphrase again:
       <pubDate>Fri, 06 May 2022 17:35:14 +0800</pubDate>
       
       <guid>https://howe0116.com/about/</guid>
-      <description>&lt;h2 id=&#34;hi-there&#34;&gt;Hi there,😊&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;I’m howe&lt;/em&gt;, &lt;del&gt;我先想想怎么编辑这个页面&lt;/del&gt;
-算了，没什么好写的，先这样吧。&lt;/p&gt;
-&lt;h2 id=&#34;一段寄语&#34;&gt;一段寄语💕&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我们生存于与他人的联系中，如果我们选择孤独，便等于选择了死亡。
-&amp;ndash;——阿德勒 《自卑与超越》&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;warning&#34;&gt;Warning💬&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;充足睡眠&lt;/li&gt;
-&lt;li&gt;适量锻炼&lt;/li&gt;
-&lt;li&gt;健康饮食&lt;/li&gt;
-&lt;li&gt;乐观心态&lt;/li&gt;
-&lt;li&gt;自律生活&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;details align=&#34;center&#34;&gt;
+&lt;summary&gt;&lt;b&gt;Warning~&lt;/b&gt;&lt;/summary&gt;
+&lt;b&gt;诶嘿~&lt;/b&gt;
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;style type=&#34;text/css&#34;&gt;
+        .bilibili_shortcodes {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        .bilibili_shortcodes iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&#34;bilibili_shortcodes&#34;&gt;
+    &lt;iframe
+            src=&#34;https://player.bilibili.com/player.html?bvid=BV1sK411G7pU&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0&#34;
+            scrolling=&#34;no&#34;
+            border=&#34;0&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/details&gt;
+&lt;center&gt;充足睡眠、适量锻炼、健康饮食~&lt;/center&gt;
+&lt;center&gt;乐观心态、自律生活~&lt;/center&gt;
 </description>
     </item>
     
